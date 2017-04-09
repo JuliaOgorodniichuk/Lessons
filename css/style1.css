@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    min-width: 960px;
+    margin: auto;
+}
+
+.row:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.block-parent {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background: #f4b2dd;
+    display: inline-block;
+}
+
+.block-1 {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #f591d2;
+    opacity: 0.5;
+}
+.block-parent:hover .block-1 {
+    display: none;
+}
+
+
+/* Нижний ряд */
+
+.mane-block {
+    float: left;
+    margin-right: 50px;
+    margin-top: 100px;
+    width: 240px;
+    height: 240px;
+    background: #f4b2dd;
+    position: relative;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.mane-block img {
+    margin: 10px;
+    width: 220px;
+    height: 170px;
+}
+
+.lable {
+    background: #dd0033;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    border: 1px solid #550215;    
+}
+
+.lable p {   
+    color: aliceblue;
+    font-weight: bold;
+    margin: 0;
+}
+
+.pos1 {
+    transform: rotate(45deg);
+    left: -40px;
+    bottom: 0;
+}
+
+.pos2 {
+    transform: rotate(-45deg);    
+    right: -40px;
+    bottom: 0;
+}
+
+.pos3 {
+    transform: rotate(-45deg);    
+    left: -40px;
+    top: 0;
+}
+
+.pos4 {
+    transform: rotate(45deg);    
+    right: -40px;
+    top: 0;
+}
+
+
