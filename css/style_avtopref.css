@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    padding: 10px;
+    background: #4d9dd8;
+    border-radius: 5px;
+    margin: 2px auto;
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.flex-element {
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.menu-right {
+    text-align: right;
+}
+
+@media (max-width:920px) {
+    .flex-container{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .flex-element-2, .flex-element-3 {
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
+    }
+    
+    .menu-left, .menu-right {
+        text-align: center;
+    }
+     
+    .flex-container-aside {
+       -webkit-box-orient: horizontal;
+       -webkit-box-direction: normal;
+           -ms-flex-direction: row;
+               flex-direction: row;
+    }
+    .flex-element-top, .flex-element-bot {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    }
+}
+
+.menu-left ul, .menu-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-left li, .menu-right li {
+    display: inline-block;
+}
+
+.flex-element-2 p {
+    text-align: center;
+    margin: 5px;
+    font: bold 30px sans-serif;
+    color: darkslategrey;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: darkslategrey;
+}
+
+.flex-element-1 {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+}
+
+.flex-element-2 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+}
+
+.flex-element-3 {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+}
+
+.flex-element-4 {
+    -ms-flex-preferred-size: 33.3333%;
+        flex-basis: 33.3333%;
+}
